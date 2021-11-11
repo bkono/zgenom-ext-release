@@ -54,6 +54,9 @@ if [[ -z $untar[1] ]]; then
 	for file in *.tar.gz; do
 		tar -xzf $file && rm $file
 	done
+	for file in *.zip; do
+		unzip $file && rm $file
+	done
 fi
 
 # Add to bin
